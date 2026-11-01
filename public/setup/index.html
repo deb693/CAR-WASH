@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>First-time setup | SteamRex</title>
+    <meta
+      name="description"
+      content="Private first-time setup for the SteamRex website administrator."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <link rel="stylesheet" href="/assets/css/admin.css" />
+    <script type="module" src="/assets/js/setup.js"></script>
+  </head>
+  <body class="admin-body">
+    <main id="main" class="admin-login">
+      <div class="admin-login-card">
+        <a class="admin-logo" href="/">Steam<span>Rex</span></a>
+        <h1>Make it yours.</h1>
+        <p>
+          Create the first super admin after importing the database and creating
+          the private environment file.
+        </p>
+        <form id="setup-form">
+          <div class="field">
+            <label for="setup-token">Private setup token</label
+            ><input
+              id="setup-token"
+              type="password"
+              required
+              autocomplete="off"
+              minlength="32"
+            />
+          </div>
+          <div class="field">
+            <label for="setup-name">Your name</label
+            ><input
+              id="setup-name"
+              required
+              autocomplete="name"
+              maxlength="100"
+            />
+          </div>
+          <div class="field">
+            <label for="setup-email">Admin email</label
+            ><input
+              id="setup-email"
+              type="email"
+              required
+              autocomplete="username"
+              maxlength="254"
+            />
+          </div>
+          <div class="field">
+            <label for="setup-password">Password (12+ characters)</label
+            ><input
+              id="setup-password"
+              type="password"
+              required
+              autocomplete="new-password"
+              minlength="12"
+              maxlength="200"
+            />
+          </div>
+          <div id="setup-message" class="error-box" role="alert"></div>
+          <button class="btn" type="submit">Create super admin →</button>
+        </form>
+        <p><a class="text-link" href="/admin/">Already set up? Sign in →</a></p>
+      </div>
+    </main>
+  </body>
+</html>

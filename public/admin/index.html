@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Administration | SteamRex</title>
+    <meta
+      name="description"
+      content="Secure SteamRex booking, service and website administration."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <link rel="stylesheet" href="/assets/css/admin.css" />
+    <script type="module" src="/assets/js/admin.js"></script>
+  </head>
+  <body class="admin-body">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="admin-app">
+      <main id="main" class="admin-loading">
+        <h1>SteamRex administration</h1>
+        <p>Loading your secure session…</p>
+      </main>
+    </div>
+    <div
+      id="admin-live"
+      class="admin-toast"
+      role="status"
+      aria-live="polite"
+      hidden
+    ></div>
+    <dialog id="editor" aria-labelledby="editor-title">
+      <div id="editor-content"></div>
+    </dialog>
+  </body>
+</html>

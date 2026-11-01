@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# Development default. scripts/prepare-seo.php creates the production version.
